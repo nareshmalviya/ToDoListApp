@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    tools:context=".ui.addtask.AddTaskActivity">
+
+  <RadioGroup
+      android:id="@+id/radiogroup"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RadioButton
+          android:id="@+id/blue"
+          android:checked="true"
+          android:buttonTint="@color/light_blue"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+      </RadioButton>
+      <RadioButton
+          android:id="@+id/red"
+          android:buttonTint="@color/light_red"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+      </RadioButton>
+      <RadioButton
+          android:id="@+id/orange"
+          android:buttonTint="@color/light_orange"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+      </RadioButton>
+      <RadioButton
+          android:id="@+id/green"
+          android:buttonTint="@color/light_green"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+      </RadioButton>
+
+  </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/radiogroup"
+        android:id="@+id/datetimelayout"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="select date"
+            android:layout_margin="4dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/selectdate"
+            tools:text="10 Dec"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:text="select time"
+            android:layout_margin="4dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/selecttime"
+            tools:text="10 Am"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_margin="4dp"
+        android:id="@+id/taskdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datetimelayout">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+
+    <Button
+        android:id="@+id/saveanotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskdetail"
+        android:text="SAVE">
+
+    </Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:padding="4dp"
+        android:id="@+id/background"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/taskdate"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            tools:text="10 Dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_below="@id/taskdate"
+            android:id="@+id/tasktime"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            tools:text="10 AM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/tasktime"
+            android:id="@+id/taskdetail"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="My First Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
